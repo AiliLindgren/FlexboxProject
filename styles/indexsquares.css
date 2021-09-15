@@ -39,34 +39,36 @@ body {
 .container {
     width: 468px;
     height: 160px;
-    background-color: #F48C06;
-    /* Ska jag ta bort margin-top? */
     margin-top: 20px;
-    border-radius: 10px;
+    background-color: #F48C06;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
     display: flex;
 }
 
 .container__square {
     width: 78px;
     min-height: 78px;
-    margin: 20px 0px 20px 20px;
-    /* margin-right: 0px;
-    margin-bottom: 20px;
-    margin-left: 20px; */
+    margin: 20px 0px 20px 20px;    
     background-color: #9D0208; 
-    border-radius: 5px;  
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;  
+}
+
+.container__square:last-child {
+    margin-right: 20px;    
 }
 
 .top-left {
     align-items: flex-end;
 }
 
-.top-right {
-    justify-content: center;
+.top-left .container__square {
+    box-shadow: none;
 }
 
-.container__square:last-child {
-    margin-right: 20px;    
+.top-right {
+    justify-content: center;
 }
 
 .middle-left {
@@ -82,4 +84,27 @@ body {
 
 .middle-right .container__square:last-child {
     align-self: flex-end
+}
+
+.bottom-left {
+    justify-content: space-evenly;
+}
+
+.bottom-left .container__square + .container__square {
+    align-self: center;
+}
+
+.bottom-left .container__square:last-child {
+    align-self: stretch;
+}
+
+.bottom-left .container__square {
+    box-shadow: none;    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    color: #FFFFFF;
 }
