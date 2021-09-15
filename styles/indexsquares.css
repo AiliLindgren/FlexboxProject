@@ -65,11 +65,21 @@ body {
     justify-content: center;
 }
 
+.container__square:last-child {
+    margin-right: 20px;    
+}
+
 .middle-left {
     align-items: center;
     justify-content: flex-end;
 }
 
-.container__square:last-child {
-    margin-right: 20px;    
+.middle-right {
+    justify-content: space-between;
+    align-items: flex-start;
+    /* align-self: stretch; */
+}
+
+.middle-right .container__square:last-child {
+    align-self: flex-end
 }
