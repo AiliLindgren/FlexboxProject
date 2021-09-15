@@ -5,3 +5,31 @@ body {
 section {
     display: inline-block;
 }
+
+.left-section {
+    margin-top: 90px;
+    margin-right: 20px;
+    margin-bottom: 90px;
+    margin-left: 98px;
+}
+
+.right-section {
+    margin-top: 90px;
+    margin-right: 98px;
+    margin-bottom: 90px;
+}
+
+.container {
+    width: 468px;
+    height: 160px;
+    background-color: #F48C06;
+}
+
+.container {
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.top {
+    margin-top: 0px;
+}
