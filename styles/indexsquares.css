@@ -43,11 +43,20 @@ body {
     /* Ska jag ta bort margin-top? */
     margin-top: 20px;
     border-radius: 10px;
+    display: flex;
 }
 
 .container__square {
     width: 78px;
     height: 78px;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
     background-color: #9D0208; 
-    border-radius: 5px;   
+    border-radius: 5px;  
+}
+
+.top-left {
+    align-items: flex-end;
 }
