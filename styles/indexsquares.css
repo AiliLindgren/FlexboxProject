@@ -32,7 +32,7 @@ body {
     /* margin: 90px 98px; */
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-between;
 }
 
@@ -48,11 +48,11 @@ body {
 
 .container__square {
     width: 78px;
-    height: 78px;
-    margin-top: 20px;
-    margin-right: 0px;
+    min-height: 78px;
+    margin: 20px 0px 20px 20px;
+    /* margin-right: 0px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 20px; */
     background-color: #9D0208; 
     border-radius: 5px;  
 }
@@ -60,3 +60,11 @@ body {
 .top-left {
     align-items: flex-end;
 }
+
+.top-right {
+    justify-content: center;
+}
+
+/* .middle-left {
+
+} */
