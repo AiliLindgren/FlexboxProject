@@ -2,7 +2,7 @@ body {
     background: #370617;
 }
 
-section {
+/* section {
     display: inline-block;
 }
 
@@ -17,19 +17,37 @@ section {
     margin-top: 90px;
     margin-right: 98px;
     margin-bottom: 90px;
+} */
+
+.main-container {
+
+    /* Hur ska jag göra med positioneringen?? */
+    position: absolute;
+    top: 90px;
+    right: 98px;
+    bottom: 90px;
+    left: 98px;
+    width: 956px;
+    height: 520px;
+    /* margin: 90px 98px; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .container {
     width: 468px;
     height: 160px;
     background-color: #F48C06;
-}
-
-.container {
+    /* Ska jag ta bort margin-top? */
     margin-top: 20px;
     border-radius: 10px;
 }
 
-.top {
-    margin-top: 0px;
+.container__square {
+    width: 78px;
+    height: 78px;
+    background-color: #9D0208; 
+    border-radius: 5px;   
 }
