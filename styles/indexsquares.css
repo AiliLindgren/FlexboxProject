@@ -47,7 +47,7 @@ body {
 }
 
 .container__square {
-    width: 78px;
+    min-width: 78px;
     min-height: 78px;
     margin: 20px 0px 20px 20px;    
     background-color: #9D0208; 
@@ -107,4 +107,40 @@ body {
     line-height: 14px;
     /* identical to box height */
     color: #FFFFFF;
+}
+
+.bottom-right {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-content: space-around; */
+
+    /* align-items: center;
+    justify-content: space-evenly; */
+}
+
+/* #left-square {
+    align-self: stretch;
+} */
+
+/* #middle-square {
+    align-self: stretch;
+} */
+
+/* #right-square {
+    align-self: stretch;
+} */
+
+/* Den här koden fungerar inte som den ska. Det händer inget när jag ändrar värdet till align-self propertyn. */
+
+/* .bottom-right .container__square + .container__square {
+    
+} */
+
+.bottom-right .container__square:last-child {
+    align-self: flex-start;
+}
+
+.bottom-right .container__square:first-child {
+    align-self: flex-end;
 }
