@@ -2,25 +2,7 @@ body {
     background: #370617;
 }
 
-/* section {
-    display: inline-block;
-}
-
-.left-section {
-    margin-top: 90px;
-    margin-right: 20px;
-    margin-bottom: 90px;
-    margin-left: 98px;
-}
-
-.right-section {
-    margin-top: 90px;
-    margin-right: 98px;
-    margin-bottom: 90px;
-} */
-
 .main-container {
-
     /* Hur ska jag göra med positioneringen?? */
     position: absolute;
     top: 90px;
@@ -29,10 +11,8 @@ body {
     left: 98px;
     width: 956px;
     height: 520px;
-    /* margin: 90px 98px; */
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
     justify-content: space-between;
 }
 
@@ -47,7 +27,7 @@ body {
 }
 
 .container__square {
-    min-width: 78px;
+    width: 78px;
     min-height: 78px;
     margin: 20px 0px 20px 20px;    
     background-color: #9D0208; 
@@ -79,7 +59,6 @@ body {
 .middle-right {
     justify-content: space-between;
     align-items: flex-start;
-    /* align-self: stretch; */
 }
 
 .middle-right .container__square:last-child {
@@ -110,37 +89,14 @@ body {
 }
 
 .bottom-right {
-    flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    /* align-content: space-around; */
-
-    /* align-items: center;
-    justify-content: space-evenly; */
 }
 
-/* #left-square {
-    align-self: stretch;
-} */
-
-/* #middle-square {
-    align-self: stretch;
-} */
-
-/* #right-square {
-    align-self: stretch;
-} */
-
-/* Den här koden fungerar inte som den ska. Det händer inget när jag ändrar värdet till align-self propertyn. */
-
-/* .bottom-right .container__square + .container__square {
-    
-} */
+.bottom-right .container__square + .container__square {
+    flex-grow: 0.5;    
+}
 
 .bottom-right .container__square:last-child {
-    align-self: flex-start;
-}
-
-.bottom-right .container__square:first-child {
-    align-self: flex-end;
+    flex-grow: 0;
 }
