@@ -30,7 +30,7 @@ body {
     width: 78px;
     min-height: 78px;
     margin: 20px 0px 20px 20px;    
-    background-color: #9D0208; 
+    background: #9D0208; 
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;  
 }
@@ -67,14 +67,7 @@ body {
 
 .bottom-left {
     justify-content: space-evenly;
-}
-
-.bottom-left .container__square + .container__square {
-    align-self: center;
-}
-
-.bottom-left .container__square:last-child {
-    align-self: stretch;
+    /* align-items: baseline; */
 }
 
 .bottom-left .container__square {
@@ -86,7 +79,31 @@ body {
     line-height: 14px;
     /* identical to box height */
     color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; //Does not work. */
+    /* align-items: baseline; //Does not work. */
 }
+
+.bottom-left .container__square + .container__square {
+    align-self: center;
+}
+
+.bottom-left .container__square:last-child {
+    align-self: stretch;
+}
+
+.bottom-left .container__square p {
+    align-content: baseline;
+}
+
+/* .paragraph-left {    
+    align-self: center;
+} */
+
+/* .paragraph-middle {
+    align-self: flex-start;
+} */
 
 .bottom-right {
     align-items: center;
